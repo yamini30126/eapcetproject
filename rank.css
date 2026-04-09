@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  /* Soft dark overlay + clean graduation background */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url('https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: black;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-login {
+  padding: 6px 14px;
+ 
+  border: 2px solid black;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Form Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.form-box {
+  background: rgba(255, 255, 255, 0.96);
+  padding: 40px;
+  border-radius: 18px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+  color: #111;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.form-box label {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.form-box input[type="text"],
+.form-box select {
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.gender-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 8px;
+}
+
+.gender-options label {
+  font-size: 14px;
+}
+
+/* Button */
+.form-box button {
+  margin-top: 25px;
+  padding: 10px;
+  border: none;
+  background-color: black;
+  color:white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-box button:hover {
+  background-color: #333;
+}
+
+/* Results Section */
+#collegelist {
+  margin-top: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+#collegelist h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 18px;
+}
+
+#collegelist h4 {
+  color: #007bff;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+#collegelist p {
+  color: #666;
+  margin: 0 0 15px 0;
+  font-size: 14px;
+}
+
+#collegelist strong {
+  color: #333;
+  font-weight: 600;
+}
+
+#collegelist small {
+  color: #666;
+  font-size: 12px;
+}
+
